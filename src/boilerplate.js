@@ -10,6 +10,7 @@ var resize = function() {
   renderer.domElement.height = window.innerHeight;
 }
 resize();
+window.addEventListener("resize", resize)
 var scene = new THREE.Scene();
 var camera = new THREE.PerspectiveCamera( 45, width / height, 0.1, 1000 );
 scene.add( camera );
