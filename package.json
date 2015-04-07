@@ -5,8 +5,8 @@
   "main": "server.js",
   "dependencies": {
     "three": "^0.70.0",
-    "three-orbit-controls": "^69.0.4"
-
+    "three-orbit-controls": "^69.0.4",
+    "three-effectcomposer": "0.0.1",
   },
   "devDependencies": {
     "browserify": "^9.0.7",
