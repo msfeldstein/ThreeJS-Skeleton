@@ -4,6 +4,11 @@ var width = window.innerWidth;
 var height = window.innerHeight;
 var renderer = new THREE.WebGLRenderer({antialias: true, alpha: true});
 document.body.appendChild(renderer.domElement);
+var scene = new THREE.Scene();
+var camera = new THREE.PerspectiveCamera( 45, width / height, 0.1, 1000 );
+scene.add( camera );
+camera.position.z = 5;
+
 var resize = function() {
   renderer.setSize( window.innerWidth, window.innerHeight )
   renderer.domElement.width = window.innerWidth;
@@ -12,11 +17,7 @@ var resize = function() {
 }
 resize();
 window.addEventListener("resize", resize)
-var scene = new THREE.Scene();
-var camera = new THREE.PerspectiveCamera( 45, width / height, 0.1, 1000 );
-scene.add( camera );
-camera.position.z = 5;
-;
+
 var callbacks = [];
 
 var animate = function() {
