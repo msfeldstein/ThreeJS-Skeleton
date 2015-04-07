@@ -15,8 +15,8 @@
     "watchify": "^3.1.0"
   },
   "scripts": {
-    "watch": "watchify src/main.js -o public/app.js -v",
-    "build": "browserify src/main.js -o public/app.js",
+    "watch": "watchify src/main.js -o out/app.js -v",
+    "build": "browserify src/main.js -o out/app.js",
     "start": "npm run watch & nodemon server.js"
   },
   "author": "",
